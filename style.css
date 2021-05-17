@@ -14,6 +14,10 @@ body{
 img{
     max-width:  100%;
 }
+.navbar-band a{
+    margin-left: 60px;
+    opacity: 0.8;
+}
 *{
     outline: none !important;
 }
@@ -23,6 +27,8 @@ a{
 a:hover{
     color: #ffc107;
     text-decoration: none;
+    transform: scale(2);
+
 }
 .header-left{
     width: 80px;
@@ -34,9 +40,9 @@ a:hover{
     z-index: 99999;
 }
 .header-left .top a{
-    background: #ffc107;
+    background: blue;
     color:  white;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     font-size: 40px;
     height: 80px;
@@ -110,7 +116,7 @@ button.toggler-menu{
     color: white;
     box-shadow: 0px -8px 0 0 currentcolor, 0px 8px 0 0 currentcolor;
 }
-@media (max-width: 767px){
+@media (max-width:2000px){
     .mob-header{
         display: block;
     }
@@ -143,7 +149,7 @@ button.toggler-menu{
 .top-fixed{
     position: absolute;
     padding: 30px 50px 0;
-    top: 0;
+    top: 45px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -152,10 +158,12 @@ button.toggler-menu{
     margin-left: 195px;
 }
 .info label{
+    top: 100px;
     margin: 0;
     color: white;
     font-weight: 400;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
     
 }
 .info label + slabel{
@@ -188,16 +196,19 @@ button.toggler-menu{
     top: 0;
     background-repeat: no-repeat;
     background-position: top left;
+
 }
 .box{
     padding-top: 90px;
     padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 .box h6{
     color: white;
     font-size: 20px;
     font-weight: 400;
     margin: 0 0 20px;
+    font-family: 'Poppins', sans-serif;
 }
 .box h1{
     font-size: 50px;
@@ -205,6 +216,7 @@ button.toggler-menu{
     line-height: 1;
     margin: 0 0 20px;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .box .lead{
     color: white;
@@ -212,16 +224,18 @@ button.toggler-menu{
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 .box .desc{
     max-width: 450px;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .btn-bar{
     padding-top: 10px;
 }
 .btn-bar a{
-    color: white;
+    color: orange;
     font-size: 25px;
     line-height: 1;
     font-weight: 400;
@@ -230,6 +244,222 @@ button.toggler-menu{
     padding-left: 0;
     transition: ease all 0.35s;
 }
+.btn-bar a:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    widows: 0;
+    height: 2px;
+    background: currentColor;
+    transition: ease all 0.35s;
+}
+.btn-bar a:hover{
+    padding-left: 45px;
+}
+.btn-bar a:hover:after{
+    width: 40px;
+}
+@media (max-width: 767px){
+    .banner .top-fixed{
+        display: none !important;
+    }
+}
+@media (max-width: 767px){
+    .banner .box h6{
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+}
+@media (max-width: 767px){
+    .banner .box h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px){
+    .banner .box lead{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991px){
+    .banner .me{
+        opacity: 0.4;
+        width: 80vw;
+    }
+}
+#about{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.about-me img{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    position: relative;
+}
+.about-me img:hover{
+    transform: scale(1.2);
+
+}
+.about-me .social-icons{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+}
+.about-me .social-icons a{
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    background: #0b0b13;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 5px;
+    transition: ease all 0.35s;
+    transform: scale(1);
+    margin-top: -150px;
+}
+.social-icons a i{
+    line-height: inherit;
+}
+.social-icons a:nth-child(1){
+    top: -25px;
+}
+
+.social-icons a:nth-child(2){
+    top: -8px;
+}
+
+.social-icons a:nth-child(4){
+    top: -8px;
+}
+
+.social-icons a:nth-child(5){
+    top: -25px;
+}
+.social-icons a:hover{
+    transform: scale(1.5);
+    background: #ff9301;
+    color: white;
+}
+.info{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    width: 300px;
+    margin-left: 7%;
+}
+.info h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.info p{
+    margin: 0;
+    font-size: 16px;
+}
+.info-list{
+    padding-top: 15px;
+    color: white;
+}
+.info-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.info-list li{
+    padding: 4px 0;
+}
+.info-list label{
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.info-list li:hover{
+    transform: scale(1.1);
+    color: yellow;
+}
+
+.separated{
+    background-image: url(border.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: repeat-x;
+    background-size: auto 13px;
+    background-position: center;
+        
+}
+.box1{
+    background: #0b0b13;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.box1:before{
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: -220px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    z-index: -1;
+    background: #0b0b13;
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
+}
+.box1:after{
+    content: "";
+    position: absolute;
+    top: -72px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -2;
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.15s;
+}
+.box1 a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+
+}
+.box1 .content{
+    padding-top: 25px;
+}
+.box1 h5{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 25px;
+}
+.box1:hover:before{
+    top: -72px;
+    left: -40px;
+    border-radius: 50%;
+}
+.box1:hover:after{
+    content: "";
+    width: 120%;
+    left: -10%;
+    top: -10%;
+    height: 120%;
+    border-radius: 0;
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
+}
+
+
+
 
 
 
