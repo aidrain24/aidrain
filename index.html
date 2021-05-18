@@ -279,8 +279,10 @@
         </div>
         
     </section>
-   <br><br><br> 
-        
+    
+    
+   <br><br><br><br><br> 
+    <div class="container text-white">
         <div id="works">
             <div class="title">
                 <h3>Our Services / Products</h3>
@@ -291,6 +293,7 @@
                     <div class="topbar">
                         <span class="back" id="close">&larr;</span>
                     </div>
+                    <br><br>
                     <ul id="tp-grid" class= "tp-grid">
                       
                        <li data-pile="Creative Design">
@@ -489,49 +492,45 @@
                                <img src="img20.png" alt="">
                            </a>
                        </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+   <div class="separated"></div>
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center text-white">
+                    <h2>My Photos</h2>
+                    <p class="subtitle">Recent Works</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="folio">
+                        <div class="port one">
+                            <img src="1.png" alt="">
+                            <div class="Hover">
+                                <a href="1.png" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
             
         </div>
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         
+    </section>
          
          
          
@@ -628,28 +627,16 @@
        
       
       
-   
-   
-   
-   
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+    
+    <script src= "modernizr.custom.63321.js"></script>
+    <script src= "jquery.stapel.js"></script>
+    
+    
+    
     
     <script>
     (function($){
@@ -671,14 +658,49 @@
      
      })(jQuery);
     
-    
-    
-    
-    
-    
-    
-    
+
     </script>
+    <script>
+        $(function() {
+            var $grid = $('#tp-grid'),
+                $name = $('#name'),
+                $close = $('#close'),
+                $loader = $('').insertBefore($grid),
+                stapel =$grid.stapel({
+                    randomAngle : true,
+                    delay : 50,
+                    gutter : 70,
+                    pileAngles : 5,
+                    onLoad : function(){
+                        $loader.remove();
+                    },
+                    onBeforeOpen : function( pileName ){
+                        $name.html( pileName );
+                    },
+                    onAfterOpen : function ( pileName ){
+                        $close.show();
+                    }
+                });
+            $close.on( 'click', function(){
+                $close.hide();
+                $name.empty();
+                stapel.closePile();
+            });
+            
+            
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+    
+    
+    
     
     
     

@@ -301,7 +301,7 @@ button.toggler-menu{
 }
 @media (max-width: 991px){
     .banner .me{
-        opacity: 0.4;
+        opacity: 0.7;
         width: 80vw;
     }
 }
@@ -315,6 +315,8 @@ button.toggler-menu{
     overflow: hidden;
     border: 5px solid white;
     position: relative;
+    opacity: 0.6;
+    
 }
 .about-me img:hover{
     transform: scale(1.2);
@@ -489,7 +491,7 @@ button.toggler-menu{
 }
 .topbar{
     position: relative;
-    padding: 20px 0;
+    padding: 1px 0;
     margin: 0 0 40px;
 }
 .back{
@@ -510,7 +512,7 @@ button.toggler-menu{
 }
 .tp grid{
     list-style: none;
-    position: absolute;
+    position: relative;
     display: block;
     
 }
@@ -534,7 +536,7 @@ button.toggler-menu{
     display: block;
     border: none;
 }
-tp-info{
+.tp-info, .tp-title {
     position: absolute;
     background: white;
     line-height: 20px;
@@ -547,10 +549,18 @@ tp-info{
     font-weight: 400;
     text-align: right;
     left: -100%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1),
+                10px 0 10px -3px rgba(0,0,0,0.7),
+                inset 0 0 5px rgba(0,0,0,0.04);
 }
 
-
-
+.tp-title{
+    padding: 10px 35px 10px 10px;
+    left: 0px;
+}
+.tp-title span:nth-child(2){
+    color: white;
+}
 
 
 
