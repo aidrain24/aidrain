@@ -11,6 +11,21 @@ body{
     font-size: 15px;
     font-weight: 400;
 }
+#bd-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url(../img/tm-astro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 img{
     max-width:  100%;
 }
@@ -457,6 +472,91 @@ button.toggler-menu{
     border-radius: 0;
     transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
 }
+#wrap{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.wrapper{
+    position: relative;
+    padding: 0 0 50px 0;
+    margin: 0 auto;
+}
+.wrapper img{
+    width: 395px;
+    height: 277px;
+}
+.topbar{
+    position: relative;
+    padding: 20px 0;
+    margin: 0 0 40px;
+}
+.back{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    color:  #999;
+    background: #ddd;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+.tp grid{
+    list-style: none;
+    position: absolute;
+    display: block;
+    
+}
+.tp-grid li{
+    position: absolute;
+    cursor: pointer;
+    border: 5px solid white;
+    display: none;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+.no-js .tp-grid li{
+    position: relative;
+    display: inline-block;
+} 
+.tp-grid li a{
+    display: block;
+    outline: none;
+}
+.tp-grid li img{
+    display: block;
+    border: none;
+}
+tp-info{
+    position: absolute;
+    background: white;
+    line-height: 20px;
+    color: #292929;
+    font-size: 22px;
+    line-height: 26px;
+    top: 40%;
+    width: 75%;
+    padding: 10px;
+    font-weight: 400;
+    text-align: right;
+    left: -100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
