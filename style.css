@@ -562,6 +562,114 @@ button.toggler-menu{
     color: white;
 }
 
+#blog h2{
+    font-family: 'Poppins',sans-serif;
+}
+.subtitle{
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    border: 3px solid white;
+    border-radius: 50px;
+    font-family: 'Poppins',sans-serif;
+}
+.folio{
+    position: relative;
+    text-align: center;
+}
+.port{
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    transform: rotate(45deg);
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+.port img{
+    transform: rotate(-45deg);
+/*
+    width: 284px;
+    height: 284px;
+*/
+    margin: -41px 0 0 -41;
+    filter: blur(0);
+}
+.port.one{
+    left: -120px;
+    position: relative;
+}
+.port.two{
+    left: -39px;
+    position: relative;
+}
+.port.three{
+    left: 42px;
+    position: relative;
+}
+.port.four{
+    left: 124px;
+    position: relative;
+}
+.port.five{
+    left: -80px;
+    position: relative;
+    top: -57px;
+}
+.port.six{
+    left: 1px;
+    position: relative;
+    top: -59px;
+}
+.port.seven{
+    left: 83px;
+    position: relative;
+    top: -58px;
+}
+.port.eight{
+    left: -38px;
+    position: relative;
+    top: -116px;
+}
+.port.nine{
+    left: 43px;
+    position: relative;
+    top: -117px;
+}
+.mover{
+    width: 284px;
+    height: 284px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background: rgba(64,64,64,0.85);
+    transform: rotate(-45deg) scale(0);
+    transition: all 400ms ease;
+    margin: -41px 0 0 -41px;
+    line-height: 20px;
+}
+.mover a.prePhoto{
+    background: #de3c2f none repeat scroll 0.0;
+    border-radius: 50%;
+    bottom: 0;
+    color:  white;
+    font-size:  20px;
+    height: 40px;
+    left: -50px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+}
+
+
+
 
 
 
