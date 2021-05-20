@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="et-line/style.css">
     <link rel="stylesheet" href="themify-icons.css">
     
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/css/prettyPhoto.min.css">
+    
+    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css "rel="stylesheet">
@@ -496,8 +501,9 @@
                 </div>
             </div>
         </div>
+           <div class="separated"></div>
     </div>
-   <div class="separated"></div>
+
     <section id="blog">
         <div class="container">
             <div class="row">
@@ -758,6 +764,10 @@
 
     
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script>
+    
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
     
     <script src= "modernizr.custom.63321.js"></script>
@@ -814,6 +824,31 @@
                 $name.empty();
                 stapel.closePile();
             });
+            var smoothScroll = new scrollToSmooth('a',{
+                easing: 'easeInOutBack',
+                duration: 1490,
+                durationRelative: true,
+                onScrollStart: (data) =>{console.log(data); },
+                onScrollUpdate: (data) =>{console.log(data); },
+                onScrollEnd: (data)=>{console.log(data); },
+            });
+            smoothScroll.init();
+            
+            if($("a[data-rel^='prettyPhoto']").length > 0){
+                $("a[data-rel^='prettyPhoto']").prettyPhoto({
+                    social_tools: false
+                })
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
         });
@@ -836,13 +871,37 @@ var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
 var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
 s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 </script>
+   
+   
+   
+   
+   
+   
+   
+   
     
 </body>
 </html>
 
 
+<!--
+
+figure.snip1321:hover figcaption,
+figure.snip1321.hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
+}
 
 
 
-
-
+-->

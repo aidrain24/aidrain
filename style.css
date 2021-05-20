@@ -2,9 +2,19 @@ html{
     overflow-x:hidden;
 }
 .navbar-band a img{
-    width: 250px;
+    width: 500px;
     height: auto;
 }
+.navbar-band a img:hover{
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(-180deg) scale(1.1);
+    filter: blur(0);
+    
+}
+
+
+
 body{
     background: #10101a;
     font-family: sans-serif;
@@ -32,6 +42,7 @@ img{
 .navbar-band a{
     margin-left: 60px;
     opacity: 0.8;
+
 }
 *{
     outline: none !important;
@@ -689,7 +700,51 @@ button.toggler-menu{
     transform: rotate(-45deg) scale(1);
     filter: blur(0);
 }
-
+.Hover a.details{
+    width: 40px;
+    height: 40px;
+    border-radius: 58%;
+    font-size: 20px;
+    color: #404040;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+}
+.Hover a.details:hover{
+    color: #de3c2f;
+}
+.Btn{
+    position: relative;
+}
+.viewBtn{
+    background: #de3c2f none repeat scroll 0.0;
+    display: table;
+    height: 200px;
+    left: 4px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -174px;
+    width: 200px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    transition: 700ms;
+}
+.viewBtn a{
+    display: table-cell;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    vertical-align: middle;
+    transform: rotate(45deg);
+}
 
 
 
