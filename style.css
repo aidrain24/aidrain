@@ -595,9 +595,10 @@ button.toggler-menu{
 /*
     width: 284px;
     height: 284px;
-*/
     margin: -41px 0 0 -41;
     filter: blur(0);
+    max-width:  100%;
+*/
 }
 .port.one{
     left: -120px;
@@ -640,7 +641,9 @@ button.toggler-menu{
     position: relative;
     top: -117px;
 }
-.mover{
+
+
+.Hover{
     width: 284px;
     height: 284px;
     left: 0;
@@ -653,7 +656,9 @@ button.toggler-menu{
     margin: -41px 0 0 -41px;
     line-height: 20px;
 }
-.mover a.prePhoto{
+
+
+.Hover a.prePhoto{
     background: #de3c2f none repeat scroll 0.0;
     border-radius: 50%;
     bottom: 0;
@@ -667,8 +672,23 @@ button.toggler-menu{
     top: 0;
     width: 40px;
 }
-
-
+.Hover a.prePhoto:hover{
+    color: white;
+}
+.Hover a i{
+    position: relative;
+    top: 10px;
+}
+.port .Hover{
+    opacity: 0;
+    visibility: hidden;
+}
+.port:hover .Hover{
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(-45deg) scale(1);
+    filter: blur(0);
+}
 
 
 
