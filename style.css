@@ -745,6 +745,62 @@ button.toggler-menu{
     vertical-align: middle;
     transform: rotate(45deg);
 }
+.cube{
+    overflow-x: hidden !impottant;
+    margin-top: 30px;
+}
+.cbp-l-caption-alignCenter{
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+cbp-caption:hover .cbp-l-caption-alignCenter{
+    opacity: 1;
+}
+plus{
+    display:block;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.plus::before{
+    width: 2px;
+    margin-left: -1px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+}
+.plus::after{
+    height: 2px;
+    margin-top: -1px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+}
+.plus::before,
+.plus::after{
+    content: "";
+    position: absolute;
+    background: red;
+}
+.cbp-item a img{
+    transition: all 0.5s ease-in-out;
+}
+.cbp-item a:hover img{
+    transform: scale(2) !important;
+}
+
+
+
+
+
+
+
 
 
 
