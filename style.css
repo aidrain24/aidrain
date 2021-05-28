@@ -786,7 +786,7 @@ plus{
 .plus::after{
     content: "";
     position: absolute;
-    background: red;
+    background: white;
 }
 .cbp-item a img{
     transition: all 0.5s ease-in-out;
